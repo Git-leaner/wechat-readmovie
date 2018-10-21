@@ -1,0 +1,6 @@
+<import src='./list-tpl/list-tpl.wxml'/>
+<view class='container flex column flex-start center'>
+    <block wx:for="{{movieList}}" wx:for-item="item" wx:key="idx">
+      <template is="movie-list" data="{{...item}}"/>
+    </block>
+</view>

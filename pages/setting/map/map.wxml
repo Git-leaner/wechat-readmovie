@@ -1,0 +1,4 @@
+<!--pages/setting/map/map.wxml-->
+<map id="map" longitude='{{longitude}}' latitude='{{latitude}}' scale="14" controls='{{controls}}' bindcontroltap='controltap' markers='{{markders}}' bindmarkertap='markettap' polyline='{{polyline}}' bindregionchange='regionchange' show-location=''>
+
+</map>

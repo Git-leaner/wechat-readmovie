@@ -1,0 +1,12 @@
+<!--pages/movie/item-tpl/item-tpl.wxml-->
+<import src='../../book/star-tmp/star.wxml' />
+<template name="movie-item">
+  <view class='movie-item flex column ' bindtap='showdetail' data-title='{{id}}'>
+    <image mode='aspectFill' class='item-pic' src='{{images.medium}}'></image>
+    <text class='item-title'>{{title}}</text>
+    <view class='item-score'>
+      <template is='star-tpl' data="{{star:stars,score:rating.average,starUrl:starUrl}}"></template>
+    </view>
+  </view>
+</template>
+

@@ -1,0 +1,421 @@
+{
+  "count": 5,
+  "start": 0,
+  "total": 1222,
+  "books": [
+    {
+      "rating": {
+        "max": 10,
+        "numRaters": 250,
+        "average": "9.0",
+        "min": 0
+      },
+      "subtitle": "获诺贝尔文学奖作家丛书",
+      "pubdate": "1985",
+      "series": {
+        "id": "58",
+        "title": "获诺贝尔文学奖作家丛书"
+      },
+      "image": "https://img3.doubanio.com\/view\/subject\/m\/public\/s3282935.jpg",
+      "binding": "平装",
+      "images": {
+        "small": "https://img3.doubanio.com\/view\/subject\/s\/public\/s3282935.jpg",
+        "large": "https://img3.doubanio.com\/view\/subject\/l\/public\/s3282935.jpg",
+        "medium": "https://img3.doubanio.com\/view\/subject\/m\/public\/s3282935.jpg"
+      },
+      "alt": "https:\/\/book.douban.com\/subject\/3236336\/",
+      "id": "3236336",
+      "title": "四个四重奏",
+      "author_intro": "",
+      "tags": [
+        {
+          "count": 167,
+          "name": "诗歌",
+          "title": "诗歌"
+        },
+        {
+          "count": 150,
+          "name": "艾略特",
+          "title": "艾略特"
+        },
+        {
+          "count": 76,
+          "name": "外国文学",
+          "title": "外国文学"
+        },
+        {
+          "count": 64,
+          "name": "T·S·艾略特",
+          "title": "T·S·艾略特"
+        },
+        {
+          "count": 58,
+          "name": "四个四重奏",
+          "title": "四个四重奏"
+        },
+        {
+          "count": 53,
+          "name": "英国",
+          "title": "英国"
+        },
+        {
+          "count": 51,
+          "name": "诺贝尔文学奖",
+          "title": "诺贝尔文学奖"
+        },
+        {
+          "count": 40,
+          "name": "T.S.Eliot",
+          "title": "T.S.Eliot"
+        }
+      ],
+      "origin_title": "",
+      "price": "2.30元",
+      "translator": [
+        "裘小龙"
+      ],
+      "catalog": "",
+      "pages": "290页",
+      "publisher": "漓江出版社",
+      "isbn10": "SH10256-137",
+      "alt_title": "",
+      "url": "https:\/\/api.douban.com\/v2\/book\/3236336",
+      "author": [
+        "(英)艾略特(T.S.Eliot)"
+      ],
+      "summary": ""
+    },
+    {
+      "rating": {
+        "max": 10,
+        "numRaters": 96,
+        "average": "8.4",
+        "min": 0
+      },
+      "subtitle": "获诺贝尔文学奖作家丛书",
+      "author": [
+        "蒙塔莱"
+      ],
+      "pubdate": "1992年",
+      "tags": [
+        {
+          "count": 91,
+          "name": "诗歌",
+          "title": "诗歌"
+        },
+        {
+          "count": 82,
+          "name": "蒙塔莱",
+          "title": "蒙塔莱"
+        },
+        {
+          "count": 55,
+          "name": "意大利",
+          "title": "意大利"
+        },
+        {
+          "count": 26,
+          "name": "外国文学",
+          "title": "外国文学"
+        },
+        {
+          "count": 22,
+          "name": "隐逸派",
+          "title": "隐逸派"
+        },
+        {
+          "count": 19,
+          "name": "诺贝尔",
+          "title": "诺贝尔"
+        },
+        {
+          "count": 17,
+          "name": "生活之恶",
+          "title": "生活之恶"
+        },
+        {
+          "count": 15,
+          "name": "诺贝尔文学奖",
+          "title": "诺贝尔文学奖"
+        }
+      ],
+      "origin_title": "",
+      "image": "https://img1.doubanio.com\/view\/subject\/m\/public\/s2725788.jpg",
+      "binding": "平装",
+      "translator": [
+        "吕同六",
+        "刘儒庭"
+      ],
+      "catalog": "",
+      "pages": "336页",
+      "images": {
+        "small": "https://img1.doubanio.com\/view\/subject\/s\/public\/s2725788.jpg",
+        "large": "https://img1.doubanio.com\/view\/subject\/l\/public\/s2725788.jpg",
+        "medium": "https://img1.doubanio.com\/view\/subject\/m\/public\/s2725788.jpg"
+      },
+      "alt": "https:\/\/book.douban.com\/subject\/2002962\/",
+      "id": "2002962",
+      "publisher": "漓江出版社",
+      "isbn10": "7540709243",
+      "isbn13": "9787540709242",
+      "title": "生活之恶",
+      "url": "https:\/\/api.douban.com\/v2\/book\/2002962",
+      "alt_title": "",
+      "author_intro": "Eugenio Montale(1896-1981), 1975年诺贝尔文学奖获得者.",
+      "summary": "本书收入蒙氏代表作品158首, 包括《乌贼骨》、《生活之恶》等名篇,有诗人的散文、自白等。",
+      "series": {
+        "id": "58",
+        "title": "获诺贝尔文学奖作家丛书"
+      },
+      "price": "7.10"
+    },
+    {
+      "rating": {
+        "max": 10,
+        "numRaters": 121,
+        "average": "7.1",
+        "min": 0
+      },
+      "subtitle": "（诺贝尔经济学奖得主关于经济、政治、社会的经典之作，薛兆丰专文推荐）",
+      "author": [
+        "（美）加里•贝克尔",
+        "吉蒂•贝克尔"
+      ],
+      "pubdate": "2013-6",
+      "tags": [
+        {
+          "count": 176,
+          "name": "经济学",
+          "title": "经济学"
+        },
+        {
+          "count": 53,
+          "name": "经济",
+          "title": "经济"
+        },
+        {
+          "count": 40,
+          "name": "贝克尔",
+          "title": "贝克尔"
+        },
+        {
+          "count": 19,
+          "name": "美国",
+          "title": "美国"
+        },
+        {
+          "count": 19,
+          "name": "社会学",
+          "title": "社会学"
+        },
+        {
+          "count": 18,
+          "name": "生活",
+          "title": "生活"
+        },
+        {
+          "count": 13,
+          "name": "诺贝尔",
+          "title": "诺贝尔"
+        },
+        {
+          "count": 9,
+          "name": "金融",
+          "title": "金融"
+        }
+      ],
+      "origin_title": "The Economics of Life",
+      "image": "https://img3.doubanio.com\/view\/subject\/m\/public\/s26696653.jpg",
+      "binding": "平装",
+      "translator": [],
+      "catalog": "",
+      "ebook_url": "https:\/\/read.douban.com\/ebook\/1282649\/",
+      "pages": "356",
+      "images": {
+        "small": "https://img3.doubanio.com\/view\/subject\/s\/public\/s26696653.jpg",
+        "large": "https://img3.doubanio.com\/view\/subject\/l\/public\/s26696653.jpg",
+        "medium": "https://img3.doubanio.com\/view\/subject\/m\/public\/s26696653.jpg"
+      },
+      "alt": "https:\/\/book.douban.com\/subject\/24745494\/",
+      "id": "24745494",
+      "publisher": "机械工业出版社",
+      "isbn10": "7111422007",
+      "isbn13": "9787111422006",
+      "title": "生活中的经济学",
+      "url": "https:\/\/api.douban.com\/v2\/book\/24745494",
+      "alt_title": "The Economics of Life",
+      "author_intro": "加里•贝克尔\n(Gary S. Becker)\n美国著名的经济学家和社会学家，芝加哥大学教授，1992年诺贝尔经济学奖得主。他因“把微观经济分析的领域推广到包括非市场行为的人类行为和相互作用的广阔领域”而获得诺贝尔经济学奖。贝克尔教授是以经济理论来分析人类行为的先驱经济学家之一，著有《生活中的经济学》《反常识经济学》《人力资本》《家庭论》和《人类行为的经济分析》等作品。\n吉蒂•贝克尔\n(Guity Nashat Becker)\n美国芝加哥大学历史学博士，执教于伊利诺伊大学芝加哥分校。在芝加哥念书期间，认识了加里•贝克尔，并结为夫妇。",
+      "summary": "经济学家乔治•斯蒂格勒曾说，教授写文章的时候，光是开场白就要用上5页的篇幅。而诺贝尔经济学奖得主加里•贝克尔却连续10年写出了多达130多篇、每篇只有800多字、短小精悍的专栏文章，每一篇文章都做到了思路清晰、观点旗帜鲜明。\n这些文章以其扎实的经济分析，与随处可见的个人意见区别开来，广受各个阶层读者的喜爱，经典不衰。\n通常，专栏所谈论的当代问题，很快就会被遗忘。但是，加里•贝克尔的这些文章，即使是讨论那些已经忘却的问题，其分析也有助于学者、企业主管、经济爱好者及其他读者更深入地了解在经济、社会以及政治等方面随时出现的问题。\n这些文章证明，经济学的思维方式能告诉我们，人们做出何种选择，是与不同选择的成本和效益密切相关的，这是政治、社会、心理等角度所看不到的。",
+      "ebook_price": "20.00",
+      "series": {
+        "id": "19569",
+        "title": "华章经典·经济"
+      },
+      "price": "49.00"
+    },
+    {
+      "rating": {
+        "max": 10,
+        "numRaters": 228,
+        "average": "8.6",
+        "min": 0
+      },
+      "subtitle": "获诺贝尔文学奖作家丛书",
+      "author": [
+        "约翰·斯坦倍克"
+      ],
+      "pubdate": "1992.2",
+      "tags": [
+        {
+          "count": 98,
+          "name": "小说",
+          "title": "小说"
+        },
+        {
+          "count": 83,
+          "name": "斯坦贝克",
+          "title": "斯坦贝克"
+        },
+        {
+          "count": 61,
+          "name": "美国",
+          "title": "美国"
+        },
+        {
+          "count": 41,
+          "name": "外国文学",
+          "title": "外国文学"
+        },
+        {
+          "count": 40,
+          "name": "诺贝尔文学奖",
+          "title": "诺贝尔文学奖"
+        },
+        {
+          "count": 32,
+          "name": "人鼠之间",
+          "title": "人鼠之间"
+        },
+        {
+          "count": 21,
+          "name": "美国文学",
+          "title": "美国文学"
+        },
+        {
+          "count": 13,
+          "name": "文学",
+          "title": "文学"
+        }
+      ],
+      "origin_title": "Of Mice and Men",
+      "image": "https://img1.doubanio.com\/view\/subject\/m\/public\/s2725738.jpg",
+      "binding": "平装",
+      "translator": [],
+      "catalog": "译本前言\n斯坦贝克和他的中篇小说\n小红马\n人鼠之间\n月亮下去了\n珍珠\n附录\n授奖词\n受奖演说\n约翰·斯坦贝克谈创作\n生平年表",
+      "pages": "",
+      "images": {
+        "small": "https://img1.doubanio.com\/view\/subject\/s\/public\/s2725738.jpg",
+        "large": "https://img1.doubanio.com\/view\/subject\/l\/public\/s2725738.jpg",
+        "medium": "https://img1.doubanio.com\/view\/subject\/m\/public\/s2725738.jpg"
+      },
+      "alt": "https:\/\/book.douban.com\/subject\/1462773\/",
+      "id": "1462773",
+      "publisher": "漓江出版社",
+      "isbn10": "7540704128",
+      "isbn13": "9787540704124",
+      "title": "人鼠之间",
+      "url": "https:\/\/api.douban.com\/v2\/book\/1462773",
+      "alt_title": "Of Mice and Men",
+      "author_intro": "约翰·斯坦贝克 (John Steinbeck 1902-1968)\n约翰·斯坦贝克（John Steinbeck，1902-1968）美国作家。生于加利福尼州的一个中产阶级家庭。小时候生活在小镇、乡村和牧场，热爱乡野的自然风光。受其母亲的熏陶，很早就接触欧洲古典文学作品，深爱《圣经》亚瑟王传奇故事的影响。1919年，进入斯坦福大学攻读大学。读书期间，当过牧场农工和修路队的运输工。他熟悉并屿社会底层的人们，他的许多作品都以他们为主人公，表现了底层人的善良、质朴的品格，创造了“斯坦贝克式的英雄”形象。30年代末，蓬勃发展的工人运动使斯坦贝克受到很大的影响。1937年和1947年，斯坦贝克两次访问北欧和苏联。\n斯坦贝克一生的创作大致可以分为三个时期。第一个时期是30年代前后，以《相持》（1936）和《愤怒的葡萄》(The Grapes of Wrath)（1939）为代表。后者是作家创作的高峰。也是20世纪美国文学的经典。该作品曾获普利策奖，由此作家名声国内外。\n40年代是他创作的第二个时期。在这个时期里，由于美国社会生产力的发展，社会财富的增加，美国人的价值观念发生了变化，他的主要作品《月亮下去了》（1942）、《珍珠》(The Pearl)（1947）以颂扬开朗、乐观的生活方式来比衬贬社会中的倾扎和狭隘的现象，其中心主题是探讨金钱、文明和人性的关系。\n50年代初，斯坦贝克离开加州迁居纽约。这一时期的创作受生物学上的“生命循环论”的影响较大，写出了两部长篇小说《伊甸园以东》(East of Eden)（1952）和《烦恼的冬天》（1961）。前者用写实和象征手法描绘了善与恶的斗争，后者描写了社会道德的沦丧，表现了作家对美国精神危机的忧虑。他认为：“战后的美国社会是富有了，但产生了一种厌倦情绪、一种消耗性的病态。”\n斯坦贝克一生写了17部小说，许多短篇故事、电影和电视剧本，以及非小说作品。由于他“通过现实主义的、富于想象的创作，表现出富于同情的幽默和对社会的敏感的观察”，1962年获得诺贝尔文学奖。",
+      "summary": "",
+      "series": {
+        "id": "58",
+        "title": "获诺贝尔文学奖作家丛书"
+      },
+      "price": "9.30"
+    },
+    {
+      "rating": {
+        "max": 10,
+        "numRaters": 143,
+        "average": "6.8",
+        "min": 0
+      },
+      "subtitle": "搞笑诺贝尔奖系列丛书2",
+      "author": [
+        "(美)马克·亚伯拉罕斯"
+      ],
+      "pubdate": "2013-7-1",
+      "tags": [
+        {
+          "count": 415,
+          "name": "科普",
+          "title": "科普"
+        },
+        {
+          "count": 312,
+          "name": "搞笑诺贝尔",
+          "title": "搞笑诺贝尔"
+        },
+        {
+          "count": 228,
+          "name": "趣味科普",
+          "title": "趣味科普"
+        },
+        {
+          "count": 132,
+          "name": "果壳阅读",
+          "title": "果壳阅读"
+        },
+        {
+          "count": 100,
+          "name": "科学",
+          "title": "科学"
+        },
+        {
+          "count": 55,
+          "name": "马克亚伯拉罕斯",
+          "title": "马克亚伯拉罕斯"
+        },
+        {
+          "count": 46,
+          "name": "菠萝科学奖",
+          "title": "菠萝科学奖"
+        },
+        {
+          "count": 35,
+          "name": "闲时面包",
+          "title": "闲时面包"
+        }
+      ],
+      "origin_title": "",
+      "image": "https://img1.doubanio.com\/view\/subject\/m\/public\/s26714198.jpg",
+      "binding": "Hardcover",
+      "translator": [
+        "徐俊培"
+      ],
+      "catalog": "第一章 《不大可能的研究年报》的不可思议历程\n第二章  诺贝尔思维\n第三章  搞笑，搞笑，搞笑诺贝尔奖\n第四章  天文学、物理学和食品\n混沌：蝴蝶效应的证据\n无所不在的圣杯\n关于睡眠的最新研究\n瑞士奇特的粒子加速器\n激光拉克莱特奶酪\n纳米技术与烤面包的物理极限\n薯片的气体动力学\n花生酱对地球自转的影响\n地球中心说\n龙卷风与活动住房的相关性\n今后被外星人绑架的低概率\n第五章  新化学\n苹果与橘子：光谱比较\n静电印刷放大显微技术(XEM)\n请教对称小姐:\n科学演示：给化学系初中级学生的刮刮香纸\n智商的量子诠释(IQ的QI)\n政治正确的元素周期表\n克劳馥的发现:科学的表面价值\n第六章  生物学与医学\n巴尼的生物分类学\n南非可怜的螃蟹\n土拨鼠啃木质素纤维的能力\n米老鼠基因\n拖车虫博物学\n青草生长的周期变化\n再会芳香：新DNA古龙水的分析\n快乐的酵母菌\n男人、女人、酵母菌\n线虫与象形文字\n冲浪姑娘真菌\n科学餐厅\n第七章  医学与生物学\n大头钉有多死？\n神秘的信息素券\n类似小鸟的多形恶性胶质次瘤\n保肝方法多种\n吮吻孩子身上擦伤的医疗效果\n月亮上的胎儿\n政治正确的心脏病学指南\n弹起式医学体温表\n无名牙医之墓\n牙用微型鲁格尔手枪:原始技术\n第八章  数学与模型（模特）\n人工智能的进展\n电话号码的数学\n用迪伦模型衡量的爱情价值\n范式悖论\n数学:异位构词法\n对称饮品\n年度泳衣狂想曲科学挂历上的肌肉男\n第九章  教育、科学及其他\n教师指南\n教室里的呆滞学生\n引起和保持学生注意力的方法\n人行道上的黏黏虫\n科学五行打油诗\n虚拟学院：第1年度报告\n第十章  不可抑制的探索精神\n如何撰写科学论文\n家具安全气囊:新兴技术一瞥\n互联网芭比和时间胶囊\n互联网历险\n搞笑诺贝尔和平奖\n2000《不大可能的研究年报》计划\n心中有上帝",
+      "pages": "363",
+      "images": {
+        "small": "https://img1.doubanio.com\/view\/subject\/s\/public\/s26714198.jpg",
+        "large": "https://img1.doubanio.com\/view\/subject\/l\/public\/s26714198.jpg",
+        "medium": "https://img1.doubanio.com\/view\/subject\/m\/public\/s26714198.jpg"
+      },
+      "alt": "https:\/\/book.douban.com\/subject\/24748651\/",
+      "id": "24748651",
+      "publisher": "浙江大学出版社",
+      "isbn10": "7308111415",
+      "isbn13": "9787308111416",
+      "title": "别客气，请随意使用科学",
+      "url": "https:\/\/api.douban.com\/v2\/book\/24748651",
+      "alt_title": "",
+      "author_intro": "作者为搞笑诺贝尔奖的发起人，《不大可能的研究年报》的主编，马克•亚伯拉罕斯。搞笑诺贝尔奖最开始就是以这本杂志为阵地发表研究的，这本杂志栏目众多，本书集合了杂志的各种有趣的栏目。",
+      "summary": "对有幽默感和好奇心的科学家们来说，科学可以用在任何想用的地方。\n激光可以用来做奶酪，动画片里的恐龙也需要做分类学研究；蝴蝶效应是真的，瑞士有一只蝴蝶引起了巴黎下雨；纳米尺度的烤面包机和纳米尺度的面包是存在的；土拨鼠到底会不会啃木头，可以啃多少木头，也值得做个实验；有一种奇怪的昆虫叫做拖车虫的，会集体在一个叫做加油站的地方觅食，人类学家也详细研究了这种昆虫的生活史；小朋友受伤之后爸爸妈妈亲吻伤口会有疗效吗，这个问题也值得研究；心脏病学术语太吓人又有歧义，对健康不好，需要使用“政治正确”的心脏病学术语；鲍勃•迪伦的歌词里包含深刻的数学原理，数学家要据此研究爱情了。\n也不要怀疑这些研究的科学性，严谨的实验设计，严格的实验操作，严肃的结论——不管面对多么奇怪的问题，都认真对待，才是科学家的态度。\n幽默感和科学是面对残酷、虚无、无聊世界的法宝。不喜闻乐见，不是科学。\n别客气，请随意使用科学。",
+      "series": {
+        "id": "24645",
+        "title": "搞笑诺贝尔系列"
+      },
+      "price": "36.00"
+    }
+  ]
+}

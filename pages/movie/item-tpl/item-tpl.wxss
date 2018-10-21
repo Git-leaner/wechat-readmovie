@@ -1,0 +1,20 @@
+/* pages/movie/item-tpl/item-tpl.wxss */
+@import "../../book/star-tmp/star.wxss";
+.movie-item{
+  height: 300rpx;
+  font-size: 13px;
+  padding: 20rpx 20rpx;
+}
+.movie-item .item-pic{
+  width: 27vw;
+  margin: 0 auto;
+  box-shadow: 0 0 4px #222;
+  border-radius: 5rpx;
+}
+.movie-item .item-title{
+  /* text-align: center; */
+  line-height: 36rpx;
+  margin-top: 5rpx;
+}
+.movie-item .item-score{
+}

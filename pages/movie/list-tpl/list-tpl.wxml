@@ -1,0 +1,16 @@
+<!--pages/movie/list-tpl/list-tpl.wxml-->
+<import src='../item-tpl/item-tpl.wxml'/>
+<template name="movie-list">
+  <view class='movie-list flex column center space-between'>
+    <view class='list-title flex space-between'>
+      <text>{{title}}</text>
+      <text bindtap='more' data-title="{{key}}">更多></text>
+    </view>
+    <view class='list-items flex row space-aund center'>
+      <block wx:for="{{postData}}" wx:for-item="item" wx:key="idx">
+        <template is="movie-item" data="{{...item}}"/>
+      </block>
+    </view>
+  </view>
+</template>
+

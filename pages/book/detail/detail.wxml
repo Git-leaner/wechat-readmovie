@@ -1,0 +1,51 @@
+<!--pages/book/detail/detail.wxml-->
+<import src='../star-tmp/star.wxml' />
+<view class='container flex column flex-start '>
+  <view class='title '>
+    <image class='title-bg' src='{{book.image}}'/>
+    <view class='digest flex column flex-start'>
+      <text class='t-name'>{{book.title}}</text>
+      <text class='t-publish'>{{book.publisher}}</text>
+      <text class='t-price'>￥{{book.price}}</text>
+      <!-- <view class='t-desc'>
+        <text>{{book.rating.numRaters}}评论</text>
+        <text>评分:{{book.rating.average}}</text>
+      </view> -->
+      <view class='t-tag'>
+        <view class='tag'  wx:for='{{book.tags}}'>
+          <text class='tag-name'>{{item.name}}</text>
+          <text class='tag-count'>{{item.count}}</text>
+        </view>
+      </view>
+    </view>
+    <image class='t-pic' src='{{book.images.medium}}'/>
+  </view>
+  <view class='info'>
+    <text class='author'>【{{book.author}}】</text>
+    <view class='score'>
+      <template is='star-tpl' data="{{star:book.stars,score:book.rating.average,starUrl:starUrl}}"></template>
+      <text class='comment'>{{book.rating.numRaters}} 人参与</text>
+    </view>
+    <view class='tools flex row space-around center'>
+      <view bindtap='onCommentTap' class='comment'>
+        <image src='/images/icon/wx_app_message.png' />
+        <text>{{book.commentsNum}}</text>
+      </view>
+      <view bindtap='onCollectTap' class='collect'>
+        <image wx:if='{{!book.collectStatus}}' src='/images/icon/wx_app_collect.png' />
+        <image wx:else src='/images/icon/wx_app_collected.png' />
+        <text>{{book.collectNum}}</text>
+      </view>
+      <view bindtap='onLikeTap' class='like'>
+        <image wx:if='{{!book.upStatus}}' src='/images/icon/wx_app_like.png' />
+        <image wx:else src='/images/icon/wx_app_liked.png' />
+        <text>{{book.upNum}}</text>
+      </view>
+    </view>
+  </view>
+  <scroll-view scroll-y class='intro'>
+    <text>{{book.author_intro}}</text>
+  </scroll-view>
+  <view class='comment'>
+  </view>
+</view>

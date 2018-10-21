@@ -1,0 +1,13 @@
+<!--pages/movie/more/more.wxml-->
+<import src='../item-tpl/item-tpl.wxml'/>
+<view class='title'>
+  <text>{{title}}</text>
+</view>
+<view class='container flex'> 
+  <!-- <block>
+    <template is='movie-item' data='{{item:postData}}'/>
+  </block> -->
+  <block wx:for="{{postData}}" wx:for-item="item" wx:key="idx">
+    <template is="movie-item" data="{{...item}}"/>
+  </block>
+</view>

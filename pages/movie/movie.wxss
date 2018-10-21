@@ -1,0 +1,8 @@
+/* pages/movie/movie.wxss */
+@import "./list-tpl/list-tpl.wxss";
+page{height:100%;background: #fff;}
+.container{
+  width: 100%;
+  height: 100%;
+}
+

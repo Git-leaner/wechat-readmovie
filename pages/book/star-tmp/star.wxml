@@ -1,0 +1,11 @@
+<template name='star-tpl'>  
+<view class='stars' >
+  <!-- <text>评分:</text> -->
+  <block wx:for="{{star}}" wx:key="{{idx}}">
+    <image wx:if='{{item===1}}'  class='star' src='{{starUrl[0]}}'/>
+    <image wx:elif='{{item===0.5}}' class='star' src='{{starUrl[1]}}'/>
+    <image wx:else='{{item===0}}'  class='star' src='{{starUrl[2]}}'/>
+  </block> 
+  <text> {{score}}分</text>
+</view>
+</template>

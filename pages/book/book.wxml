@@ -1,0 +1,36 @@
+<import src='./star-tmp/star.wxml' />
+<view class='container'>
+  <view class='search flex center'>
+    <input class='book-search' value='{{msg}}' placeholder='{{placeHolder}}'  bindinput='bookInput' type='text'/>
+    <image bindtap='bookSearch' src='../../images/icon/search.png'/>
+  </view>
+  <swiper class='flex' indicator-dots="true" indicator-color='#fff' autoplay circular="{{true}}">
+    <swiper-item  wx:for="{{postUrl}}" wx:key='index' >  
+      <image src='{{item}}'></image>
+    </swiper-item>
+  </swiper>
+  <scroll-view scroll-y class='content'>
+    <view class='item flex column flex-start center' wx:for="{{bookList}}" wx:key="{{idx}}">
+      <view bindtap='showDetail' data-id='{{item.id}}' class='title flex row space-between' >
+        <image class = "cover" src='{{item.image}}'></image>
+        <view class='msg flex column space-between' >
+          <text class='name'>{{item.title}}</text>
+          <!-- <view class='stars' >
+            <text>评分:</text>
+            <block wx:for="{{item.stars}}"> -->
+          <template is='star-tpl' data="{{star:item.stars,score:item.rating.average,starUrl:starUrl}}"></template>
+            <!-- </block> 
+            <text>{{item.rating.average}}分</text> -->
+          <!-- </view> -->
+          <text class='info'>{{item.subtitle}}</text>
+          <text class='author'>{{item.author[0]}}</text>
+        </view>
+      </view>
+      <view class='description'>
+        <!-- <text>{{item.author_intro}}</text> -->
+        <text wx:if="{{item.summary}}">{{item.summary}}...</text>
+        <text wx:else>暂无简介</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

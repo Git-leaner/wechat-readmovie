@@ -1,0 +1,60 @@
+<!--pages/book/comment/comment.wxml-->
+<view class='comment-container flex column space-between'>
+  <view class='comment-title'>
+    <text>评论【好莱坞】...（共{{comments.length}}条评论）</text>
+  </view>
+  <scroll-view scroll-y class="comment-content {{controlpanel?'slideUp':''}}">
+    <view class='comment-item' wx:for='{{comments}}'>
+      <view class='comment-user flex row flex-start center'>
+        <image mode='aspectFit' class='user-avatar' src='{{item.avatar}}' />
+        <text class='user-name'>{{item.name}}</text>
+      </view>
+      <view class='comment-details'>
+        <view class='detail-txt'>
+          <text>{{item.comment.txt}}</text>
+        </view>
+        <view wx:if='{{item.comment.img.length!=0}}' class='detail-img'>
+          <image mode='aspectFill' wx:for='{{item.comment.img}}' wx:for-item='img' src='{{img}}' wx:key="{{idx}}" />
+        </view>
+        <view wx:if="{{item.comment.voc}}" catchtap="vocPlay" class='detail-record' style='width:{{100+item.comment.voc.length}}rpx' data-voice="{{item.comment.voc.url}}">
+          <!-- <audio></audio> -->
+          <image src='/images/icon/wx_app_voice.png' catchtap='vocPlay'></image>
+          <text>{{item.comment.voc.diff}}"</text>
+        </view>
+      </view>
+      <view class='comment-postscript'>
+        <text>{{item.timeFormat}}</text>
+      </view>
+    </view>
+  </scroll-view>
+  <view class='comment-input flex column space-around center'>
+    <view class='control-panel flex row space-around center'>
+      <view class='keyboard' wx:if="{{voiceToText}}">
+        <image catchtap='changeKeyboard' src='/images/icon/wx_app_voice.png' />
+        <input bindinput='txtCommentTap' type='text' class='user-input' ></input>
+      </view>
+      <view class='keyboard' wx:else="{{voiceToText}}">
+        <image catchtap='changeKeyboard' src='/images/icon/wx_app_voice.png' />
+        <view class="interface voice {{recording?'recording':''}}" catchtouchstart='startRecord' catchtouchend='endRecord'>按住说话</view>
+      </view>
+      <image catchtap="UserPhotoAdd" src='/images/icon/wx_app_add.png' />
+      <button catchtap='sendTap' type='primary'>发送</button>
+    </view>
+    <view wx:if="{{controlpanel}}" class='choosephoto flex row'>
+      <view catchtap="imgCommentInput" class='choose album'>
+        <image src='/images/icon/wx_app_upload_image.png'></image>
+        <text>相册</text>
+      </view>
+      <view catchtap="imgCommentInput" class='choose camera'>
+        <image src='/images/icon/wx_app_camera.png'></image>
+        <text>拍照</text>
+      </view>
+      <view class='imgshowbox'>
+        <view class='showimg' wx:for="{{imgCommentMsg}}" wx:key="{{idx}}">
+          <image src="{{item}}"/>
+          <image catchtap='clearpic' class='clearimg' src='/images/icon/wx_app_xx.png'/>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

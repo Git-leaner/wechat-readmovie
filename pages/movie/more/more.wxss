@@ -1,0 +1,19 @@
+/* pages/movie/more/more.wxss */
+@import "../list-tpl/list-tpl.wxss";
+.title{
+  width: 100%;
+  text-align: center;
+  background: #ccc;
+  line-height: 18px;
+  font-size: 16px;
+  padding-top: 5px;
+
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:flex-start;
+  background: #ccc;
+}

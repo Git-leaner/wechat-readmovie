@@ -1,0 +1,43 @@
+<!--pages/movie/detail/detail.wxml-->
+<import src='../../book/star-tmp/star.wxml' />
+
+<view class='container'>
+  <text class='title'>{{movie.title}}</text>
+  <view class='movie flex row'>
+    <image class='mv-pic' src='{{movie.images.large}}'></image>
+    <view class='mv-cont flex column'>
+      <view class='mv-score'>
+        <template is='star-tpl' data="{{star:stars,score:movie.rating.average,starUrl:starUrl}}"></template>
+      </view>
+      <text class='desc'>{{movie.genres}}</text>
+      <view class='flex row flex-start'>
+        <text wx:for="{{movie.casts}}" wx:key="idx">
+          /{{item.name}}
+        </text>
+      </view>
+      <text>{{movie.year}}</text>
+      <text wx:for='{{movie.countries}}' wx:key="i">({{item}})</text>
+    </view>
+  </view>
+  <text class='left-20'>导演</text>
+  <view class='dirt flex row'>
+    <view class='list flex column' wx:for="{{movie.directors}}" wx:for-item="dirt">
+      <image src='{{dirt.avatars.medium}}'></image>
+      <text >{{dirt.name}}</text>
+    </view>
+  </view>
+  <text class='left-20'>主演</text>
+  <view class='cast flex row'>
+    <view class='list flex column' wx:for="{{movie.casts}}" wx:for-item="cast">
+      <image src='{{cast.avatars.medium}}'></image>
+      <text >{{cast.name}}</text>
+    </view>
+  </view>
+  <view class='summary'>
+    <text class='desc'>简介</text>
+    <view class='info'>
+      <text class='info-title'>{{movie.aka}}\n</text>
+      <text class='info-list'>{{movie.summary}}</text>
+    </view>
+  </view>
+</view>

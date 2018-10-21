@@ -1,0 +1,7 @@
+<view class='container'>
+  <image class='avatar' src='{{userInfo.avatarUrl}}'></image>
+  <text class='motto'>Hello, 豆瓣用户</text>
+  <view catchtap='onTapJump' class='journey-container'>
+    <text class='journey'>开启豆瓣之旅</text>
+  </view>
+</view>

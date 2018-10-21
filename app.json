@@ -1,0 +1,47 @@
+{
+  "pages": [    
+    "pages/movie/movie",
+    "pages/movie/more/more",
+    "pages/movie/detail/detail",
+    "pages/book/book",
+    "pages/book/detail/detail",
+    "pages/book/comment/comment",    
+    "pages/movie/list-tpl/list-tpl",
+    "pages/movie/item-tpl/item-tpl",
+    "pages/setting/setting",
+    "pages/setting/map/map",
+    "pages/welcome/welcome"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#e1e1e1",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "豆瓣",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#000000",
+    "backgroundColor": "#ccc",
+    "selectedColor": "#368",
+    "position":"bottom",
+    "list": [{
+      "pagePath": "pages/book/book",
+      "text": "读书",
+      "iconPath": "images/icons/wx_app_news@HL.png",
+      "selectedIconPath": "images/icon/wx_app_news@HL.png"
+    },
+    {
+      "pagePath": "pages/movie/movie",
+      "text": "光影",
+      "iconPath": "images/icons/wx_app_movie@HL.png",
+      "selectedIconPath": "images/icon/wx_app_movie@HL.png"
+    },
+    {
+      "pagePath": "pages/setting/setting",
+      "text": "设置",
+      "iconPath": "images/icons/wx_app_setting.png",
+      "selectedIconPath": "images/icon/wx_app_setting.png"
+    }]
+  }
+}
