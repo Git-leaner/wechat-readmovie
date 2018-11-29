@@ -31,7 +31,7 @@
     <view class='control-panel flex row space-around center'>
       <view class='keyboard' wx:if="{{voiceToText}}">
         <image catchtap='changeKeyboard' src='/images/icon/wx_app_voice.png' />
-        <input bindinput='txtCommentTap' type='text' class='user-input' ></input>
+        <input bindinput='txtCommentTap' type='text' class='user-input' value="{{txtCommentMsg}}"></input>
       </view>
       <view class='keyboard' wx:else="{{voiceToText}}">
         <image catchtap='changeKeyboard' src='/images/icon/wx_app_voice.png' />
@@ -45,13 +45,13 @@
         <image src='/images/icon/wx_app_upload_image.png'></image>
         <text>相册</text>
       </view>
-      <view catchtap="imgCommentInput" class='choose camera'>
+      <view catchtap="photoCommentInput" class='choose camera'>
         <image src='/images/icon/wx_app_camera.png'></image>
         <text>拍照</text>
       </view>
       <view class='imgshowbox'>
         <view class='showimg' wx:for="{{imgCommentMsg}}" wx:key="{{idx}}">
-          <image src="{{item}}"/>
+          <image src="{{item}}" />
           <image catchtap='clearpic' class='clearimg' src='/images/icon/wx_app_xx.png'/>
         </view>
       </view>

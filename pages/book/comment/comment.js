@@ -7,13 +7,10 @@ Page({
    * 页面的初始数据
    */
   data: {
+    userInfo:{},
     comments: [],
     txtCommentMsg:'',
-    imgCommentMsg: [
-      // '/images/comment/train-1.jpg',
-      // '/images/comment/train-2.jpg',
-      // '/images/comment/train-3.jpg'
-    ],
+    imgCommentMsg: [],
     VoiceCommentMsg:[],
     id:'',
     recordAudioURL:'',
@@ -30,6 +27,17 @@ Page({
     var id= this.ID;
     this.setData({id:id});
     this.execDataSync(id);
+    wx.getUserInfo({
+      withCredentials: false,
+      lang: 'zh_TW',
+      success: function (res) {
+        var data = JSON.parse(res.rawData);
+        this.setData({
+          userInfo: data
+        })
+      }.bind(this),
+      fail: function (err) { }
+    })
   },
   txtCommentTap(e){
     var textMsg = e.detail.value; 
@@ -38,7 +46,8 @@ Page({
   sendTap(){
     var txtCommentMsg = this.data.txtCommentMsg;
     var imgCommentMsg = this.data.imgCommentMsg
-    if (/^\s*$/g.test(txtCommentMsg) || imgCommentMsg.length<1) {
+    // if (/^\s*$/g.test(txtCommentMsg) || imgCommentMsg.length < 1) {
+    if (/^\s*$/g.test(txtCommentMsg) && imgCommentMsg.length < 1) {
       wx.showToast({
         title: '请输入合法文本',
         icon: 'warn',
@@ -48,18 +57,23 @@ Page({
       return;
     }
     var newComment = {
-      avatar: `/images/avatar/avatar-${(~~Math.random * 3) + 1}.png`,
-      name: ['Miley', 'Levi', '科比', '哈登', '詹姆斯'][~~(Math.random * 5) + 1],
+      // avatar: `/images/avatar/avatar-${(~~Math.random * 3) + 1}.png`,
+      // name: ['Miley', 'Levi', '科比', '哈登', '詹姆斯'][~~(Math.random * 5) + 1],
+      name: this.data.userInfo.nickName,
+      avatar: this.data.userInfo.avatarUrl,   
       comment: {
-        txt: textMsg,
-        img: '',
+        txt: txtCommentMsg,
+        img: imgCommentMsg,
         voice: ''
       },
       create_time: Date.now(),
       timeFormat: ''
     };
     this.dbPost.newComment(newComment);
-    this.execDataSync(this.id);
+    var id = this.data.id;
+    this.execDataSync(id);  //数据绑定渲染
+    this.submitimgSuccess();//提示信息
+    this.execDataReset(); //重置信息
   },
   execDataSync(id){
     this.dbPost = new DBPost({ category: 'BOOK', DataID: id })//数据实例化
@@ -94,7 +108,9 @@ Page({
       success:function(res){//录音成功返回tempfilepath
         var url=res.tempFilePath;
         var diff = Math.ceil((this.endTime-this.startTime)/1000)//向上取整
-        this.submitRecordComment(url, diff);
+        if ((this.endTime - this.startTime)>=500){
+          this.submitRecordComment(url, diff);
+        }
       }.bind(this),
       fail:function(err){},
       complete(res){},
@@ -107,8 +123,10 @@ Page({
   },
   submitRecordComment(url,diff){
     var newComment={
-      avatar: `/images/avatar/avatar-${~~(Math.random() * 3) + 1}.png`,
-      name:['Levi','科比詹姆士'][~~(Math.random()*2)],
+      name: this.data.userInfo.nickName,
+      avatar: this.data.userInfo.avatarUrl,   
+      // avatar: `/images/avatar/avatar-${~~(Math.random() * 3) + 1}.png`,
+      // name:['Levi','科比詹姆士'][~~(Math.random()*2)],
       comment:{
         txt:'',
         img:[],
@@ -167,6 +185,26 @@ Page({
       }.bind(this),
       fail:function(res){},
       complete:function(res){}
+    })
+  },
+  photoCommentInput(){
+    var imgArr = this.data.imgCommentMsg;//获取图片数组
+    if (imgArr.length >= 3) {
+      return
+    }
+    var CameraContext=wx.createCameraContext()
+    CameraContext.takePhoto({
+      quality: 'normal',
+      success: function (res) {
+        var tempFilePaths = res.tempFilePaths;
+        imgArr = [].concat(tempFilePaths);
+        console.log(tempFilePaths, imgArr);
+        this.setData({
+          imgCommentMsg: imgArr,
+        })
+      }.bind(this),
+      fail: function (res) { console.log(res) },
+      complete: function (res) { }
     })
   },
   clearpic(e){

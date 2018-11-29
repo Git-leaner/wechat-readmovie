@@ -5,7 +5,7 @@
     <view class='title'>
       <text>昵称:{{userInfo.nickName}}</text>
       <text>性别:{{userInfo.gender==1?'男':'女'}}</text>
-      <text>地址:{{userInfo.province}}</text>
+      <text>地址:{{userInfo.province}}·{{userInfo.city}}</text>
     </view>
   </view>
     <block wx:for="{{line}}" wx:key='idx'>

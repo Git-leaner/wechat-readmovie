@@ -11,12 +11,24 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.getUserInfo({
-      withCredentials: false,
-      success: function (res) {
-        this.setData({
-          userInfo:res.userInfo
-        })
+    wx.getSetting({
+      success:function(res) {
+        if (!res.authSetting['scope.userInfo', 'scope.camera']) {
+          wx.authorize({
+            scope: 'scope.userInfo',
+            success: function () {
+              wx.getUserInfo({
+                withCredentials: false,
+                success: function (res) {
+                  this.setData({
+                    userInfo: res.userInfo
+                  })
+                }.bind(this)
+              })
+              console.log(this.data)
+            }.bind(this)
+          })
+        }
       }.bind(this)
     })
   },

@@ -46,7 +46,7 @@ Page({
     var item = {};
     var index = 0;
     for (let key in PATH) {
-      util.http(PATH[key], { startParam}, function (res) {
+      util.http(PATH[key], { start:startParam.start,count:startParam.count}, function (res) {
         console.log(res);
         var subjects = res.data.subjects;
         var title = res.data.title;
@@ -80,7 +80,6 @@ Page({
       url: './more/more?path=' + path,
       success: function (res) { },
       fail: function (res) { },
-      complete: function (res) { },
     })
   },
   showdetail(e){
@@ -90,7 +89,6 @@ Page({
       url: './detail/detail?id='+id,
       success: function(res) {},
       fail: function(res) {},
-      complete: function(res) {},
     })
   },
   /**

@@ -1,18 +1,33 @@
-const douban ='http://localhost:8083/v2/';
+// const douban ='http://localhost:8083/v2/';
+var hotapp = require('./hotapp.js');
+// const douban = 'http://qtalking.co:8083/v2';
+const douban ='http://47.106.102.92:8081/v2/';
 function http(PATH,opt,callback){
-  wx.request({
-    url: douban+PATH,
-    data:opt,
-    metdod:'POST',
+  // wx.request({
+  //   url: douban+PATH,
+  //   data:opt,
+  //   metdod:'POST',
+  //   header: {
+  //     // 'content-type': 'application/json'
+  //     'Content-Type': 'json'
+  //   },
+  //   success:function(res){
+  //     callback&callback(res);
+  //   }
+  // })
+  hotapp.request({
+    useProxy: true,
+    url: douban + PATH,// 需要代理请求的网址
+    data: opt,
     header: {
-      // 'content-type': 'application/json'
       'Content-Type': 'json'
     },
-    success:function(res){
-      callback&callback(res);
+    success: function (res) {
+      callback & callback(res);
     }
   })
 }
+
 //var time=new Date() time.format('yyyy-MM-dd www HH:mm')
 function initTimeFormat(){
   Date.prototype.format=function(format,date){

@@ -48,6 +48,7 @@ page{height: 100%;}
   width: 80rpx;
   height:80rpx;
   margin-right: 40rpx;
+  border-radius:50%;
 }
 /* .user-avatar:after{
   content: '';
@@ -144,7 +145,7 @@ page{height: 100%;}
 .comment-input .control-panel .keyboard .voice{
   text-align: center;
 }
-.comment-input .control-panel .keyboard .reording{
+.comment-input .control-panel .keyboard .recording{
   background: rgba(122,42,55,0.8);
   color:#fff;
 }
@@ -175,10 +176,10 @@ page{height: 100%;}
   display: inline-block;
   width: 8vh;
   height: 16px;
-  letter-spacing: 0.6em;
+  -letter-spacing: 0.5em;
   text-align: center;
   text-indent: 5rpx;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 16px;
   color: #000;
 }
@@ -196,7 +197,7 @@ page{height: 100%;}
   margin-right: 15rpx;
 } 
 .choosephoto .showimg image{
-  width: 100%;
+  width: 120rpx;
   height: 100%;
   box-shadow: 0;
   padding: 0;

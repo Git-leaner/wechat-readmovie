@@ -61,7 +61,6 @@ Page({
       book.upNum = this.postItem.upNum;
       book.commentsNum = this.postItem.commentsNum;
       this.setData({book:book})
-      console.log(this.data.book);
     }.bind(this))
   },
   // uploadImg:function(){

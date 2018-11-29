@@ -1,21 +1,21 @@
 {
   "pages": [    
-    "pages/movie/movie",
-    "pages/movie/more/more",
-    "pages/movie/detail/detail",
+    "pages/welcome/welcome",
     "pages/book/book",
     "pages/book/detail/detail",
     "pages/book/comment/comment",    
+    "pages/movie/movie",
+    "pages/movie/more/more",
+    "pages/movie/detail/detail",
     "pages/movie/list-tpl/list-tpl",
     "pages/movie/item-tpl/item-tpl",
     "pages/setting/setting",
-    "pages/setting/map/map",
-    "pages/welcome/welcome"
+    "pages/setting/map/map"
   ],
   "window": {
     "navigationBarBackgroundColor": "#e1e1e1",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "豆瓣",
+    "navigationBarTitleText": "读书电影",
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": false
@@ -33,13 +33,13 @@
     },
     {
       "pagePath": "pages/movie/movie",
-      "text": "光影",
+      "text": "电影",
       "iconPath": "images/icons/wx_app_movie@HL.png",
       "selectedIconPath": "images/icon/wx_app_movie@HL.png"
     },
     {
       "pagePath": "pages/setting/setting",
-      "text": "设置",
+      "text": "我的",
       "iconPath": "images/icons/wx_app_setting.png",
       "selectedIconPath": "images/icon/wx_app_setting.png"
     }]

@@ -130,33 +130,35 @@ Page({
       success:function(res){
         var data=JSON.parse(res.rawData);
         console.log(data);
-        var province=data.province;
-        var appid ='2015063000000001';
-        var salt=Date.now();
-        var key ='123456';
-        var strC = appid + province+salt+key;
-        var sign = MD5(strC);
-        console.log(sign);
-        wx.request({
-          url: 'http://api.fanyi.baidu.com/api/trans/vip/translate',
-          method:'GET',
-          data:{
-            q: province,
-            appid: appid,
-            salt:salt,
-            form:'auto',
-            to:'zh',
-            sign:sign
-          },
-          success:function(res){
-            console.log(res);
-            this.setData({
-              userInfo:data,
-              // userinFo_city: res.data.trans_result[0].dst
-            })
-          }.bind(this),
+        this.setData({
+          userInfo: data
         })
-        console.log(res)
+        // var province=data.province;
+        // var appid ='2015063000000001';
+        // var salt=Date.now();
+        // var key ='123456';
+        // var strC = appid + province+salt+key;
+        // var sign = MD5(strC);
+        // console.log(sign);
+        // wx.request({
+        //   url: 'http://api.fanyi.baidu.com/api/trans/vip/translate',
+        //   method:'GET',
+        //   data:{
+        //     q: province,
+        //     appid: appid,
+        //     salt:salt,
+        //     form:'auto',
+        //     to:'zh',
+        //     sign:sign
+        //   },
+        //   success:function(res){
+        //     console.log(res);
+        //     this.setData({
+        //       userInfo:data,
+        //       // userinFo_city: res.data.trans_result[0].dst
+        //     })
+        //   }.bind(this),
+        // })
       }.bind(this),
       fail:function(err){
 

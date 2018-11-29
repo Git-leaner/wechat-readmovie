@@ -86,7 +86,7 @@ Page({
     console.log(e);
     var id = e.currentTarget.dataset.title;
     wx.navigateTo({
-      url: './detail/detail/?id=' + id,
+      url: '../detail/detail?id=' + id,
       success: function (res) { },
       fail: function (res) { },
       complete: function (res) { },

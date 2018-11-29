@@ -18,7 +18,7 @@ page{
   margin-top: 100rpx;
 }
 .journey-container{
-  width: 240rpx;
+  width: 300rpx;
   height: 80rpx;
   margin-top: 160rpx;
   text-align: center;
@@ -28,4 +28,5 @@ page{
 .journey{
   font-size: 27rpx;
   line-height: 80rpx;
+  background: #ECC0A8;
 }
